@@ -1,15 +1,16 @@
 # IMPLEMENTATION OF DARLINGTON AMPLIFIER
 
 
+- [ABSTARCT](#abstarct)
+- [REFERENCE CIRCUIT DIAGRAM](#reference-circuit-diagram)
+- [CIRCUIT DETAILS](#circuit-details)
+- [PROPOSED METHODOLOGY](#proposed-methodology)
+- [EDA TOOLS USED](#eda-tools-used)
+- [SCHEMATICS](#schematics)
+- [OUTPUT WAVEFORM](#output-waveform)
+- [AUTHOR](#author)
 
-
-
-
-
-
-
-
-
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 # ABSTARCT
@@ -85,10 +86,10 @@ plot V(vin) V(vout)
 
 # AUTHOR
 
-B. Yogapriya 
-B.E, Electronics and Communication Engineering
-Easwari Engineering College
-Mail: yogapriyab2001@gmail.com 
+    B. Yogapriya 
+    B.E, Electronics and Communication Engineering
+    Easwari Engineering College
+    Mail: yogapriyab2001@gmail.com 
 
 
 
