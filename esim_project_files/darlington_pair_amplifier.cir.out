@@ -1,0 +1,24 @@
+* c:\users\yogapriya\esim-workspace\darlington_pair_amplifier\darlington_pair_amplifier.cir
+
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+m1 vdd net-_c1-pad2_ net-_m1-pad3_ vout CMOSN W=100u L=100u M=1
+r1  vdd net-_c1-pad2_ 22k
+r2  net-_c1-pad2_ vout 5k
+c1  vin net-_c1-pad2_ 22u
+r3  net-_m1-pad3_ vout 100
+m2 net-_m2-pad1_ net-_m1-pad3_ net-_c2-pad1_ vdd CMOSP W=100u L=100u M=1
+r5  vdd net-_m2-pad1_ 1k
+r4  net-_c2-pad1_ vout 100
+r6  net-_m2-pad1_ vout 1k
+c2  net-_c2-pad1_ vout 11u
+v1  vin vout 12
+.tran 10e-03 50e-03 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

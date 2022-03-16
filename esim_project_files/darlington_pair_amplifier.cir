@@ -1,0 +1,21 @@
+* C:\Users\Yogapriya\eSim-Workspace\darlington_pair_amplifier\darlington_pair_amplifier.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 06/30/21 21:22:35
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+M1  VDD Net-_C1-Pad2_ Net-_M1-Pad3_ vout mosfet_n		
+R1  VDD Net-_C1-Pad2_ 22k		
+R2  Net-_C1-Pad2_ vout 5k		
+C1  vin Net-_C1-Pad2_ 22u		
+R3  Net-_M1-Pad3_ vout 100		
+M2  Net-_M2-Pad1_ Net-_M1-Pad3_ Net-_C2-Pad1_ VDD mosfet_p		
+R5  VDD Net-_M2-Pad1_ 1k		
+R4  Net-_C2-Pad1_ vout 100		
+R6  Net-_M2-Pad1_ vout 1k		
+C2  Net-_C2-Pad1_ vout 11u		
+v1  vin vout 12		
+
+.end
